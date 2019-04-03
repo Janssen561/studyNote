@@ -151,15 +151,9 @@ git config --global alias.last 'log -1 HEAD'
 
 ### 分支新建与合并
 
-<<<<<<< HEAD
 `git branch test` 创建分支 `test`  
 `git checkout -b iss53` 新建并切换到分支 `iss53`  
 `git checkout master` 切回 `master` 分支  
-=======
-`git branch test` 创建分支 `test`
-`git checkout -b iss53` 新建并切换到分支 `iss53` 
-`git checkout master` 切回 `master` 分支
->>>>>>> ad3af4372722194501832cf1195739f3c18ec9e0
 `git merge hotfix` 合并 `hotfix` 到 `master` 分支
 
 >合并遇到冲突，需要手动解决后缓存提交
@@ -168,14 +162,8 @@ git config --global alias.last 'log -1 HEAD'
 
 ### 分支管理
 
-<<<<<<< HEAD
-`git branch`  
-`git branch -v`  
-`git branch [--merged|--no-merged]` 查看已合并|未合并分支  
-=======
 `git branch`
 `git branch -v`
 `git branch [--merged|--no-merged]` 查看已合并|未合并分支
->>>>>>> ad3af4372722194501832cf1195739f3c18ec9e0
 `git branch -d hotfix` 删除 `hotfix` 分支
 
