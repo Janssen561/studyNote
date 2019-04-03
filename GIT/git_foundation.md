@@ -111,3 +111,13 @@ git commit --amend
 `git checkout -- <file>`
 
 ### 远程仓库的使用
+
+* 查看远程仓库 `git remote -v`
+* 克隆远程仓库 `git clone [url]`
+* 添加远程仓库 `git remote add <shortname> <url>`
+* 抓取远程仓库 `git fetch [remote-name]`
+* 拉取远程仓库 `git pull [remote-name]`
+
+>`git fetch` 是将远程主机的最新内容拉到本地，用户在检查了以后决定是否合并到工作本机分支中。
+而 `git pull` 则是将远程主机的最新内容拉下来后直接合并，即：`git pull = git fetch + git merge`，这样可能会产生冲突，需要手动解决
+
