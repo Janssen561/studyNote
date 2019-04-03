@@ -150,3 +150,5 @@ git config --global alias.last 'log -1 HEAD'
 ## Git 分支
 
 * 创建分支 `git branch test`
+
+`merge test`
