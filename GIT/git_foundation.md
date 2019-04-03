@@ -140,10 +140,13 @@ git commit --amend
 * 补打标签 `git tag -a v1.2 9fceb02` 9fceb02 是提交的部分校验和， `git log `获取
 * 共享标签 `git push origin v1.4` 或 `git push origion --tags` 更新全部标签到远程仓库
 
-### git 别名
+### Git 别名
 
 ```shell
 git config --global alias.co checkout
 git config --global alias.unstage 'reset HEAD --'
 git config --global alias.last 'log -1 HEAD'
 ```
+## Git 分支
+
+* 创建分支 `git branch test`
