@@ -1,3 +1,3 @@
 # 个人学习笔记
 ## GIT 基础
-1. git 基础命令
+1. [git 基础命令](GIT/git_foundation.md)
