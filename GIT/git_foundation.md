@@ -112,12 +112,38 @@ git commit --amend
 
 ### 远程仓库的使用
 
-* 查看远程仓库 `git remote -v`
+* 查看已配置远程仓库 `git remote -v`
 * 克隆远程仓库 `git clone [url]`
 * 添加远程仓库 `git remote add <shortname> <url>`
 * 抓取远程仓库 `git fetch [remote-name]`
 * 拉取远程仓库 `git pull [remote-name]`
+* 推送到远程仓库 `git push [remote-name] [brantch-name]`
+* 查看远程仓库 `git remote show [remote-name] `
+* 重命名远程仓库 `git remote rename [old-name] [new-name] `
+* 删除远程仓库 `git remote rm [remote-name]` 
 
->`git fetch` 是将远程主机的最新内容拉到本地，用户在检查了以后决定是否合并到工作本机分支中。
+>`git fetch` 是将远程主机的最新内容拉到本地，用户在检查了以后决定是否合并到工作本机分支中。  
 而 `git pull` 则是将远程主机的最新内容拉下来后直接合并，即：`git pull = git fetch + git merge`，这样可能会产生冲突，需要手动解决
 
+### 标签
+
+>查看标签
+
+* 列出标签 `git tag`
+* 列出指定的标签 `git tag -l 'v1.2.3*'`
+
+>添加标签  
+标签分为轻量标签 `lightweight` 和附注标签 `annotated`
+* 附注标签 `git tag -a v1.4 -m 'my version 1.4'`
+* 查看标签信息 `git show v1.4`
+* 轻量标签 `git tag v1.4-lw`
+* 补打标签 `git tag -a v1.2 9fceb02` 9fceb02 是提交的部分校验和， `git log `获取
+* 共享标签 `git push origin v1.4` 或 `git push origion --tags` 更新全部标签到远程仓库
+
+### git 别名
+
+```shell
+git config --global alias.co checkout
+git config --global alias.unstage 'reset HEAD --'
+git config --global alias.last 'log -1 HEAD'
+```
