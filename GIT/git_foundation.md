@@ -95,8 +95,19 @@ git log -S <keyword>
 --after 等等
 ```
 
-### 撤销提交
+### 撤销操作
+>重新提交  
+如下命令第二次提交取代第一次提交
 
 ```shell
+git commit -m 'amend test'
+git add *.md
 git commit --amend
 ```
+>取消暂存的文件  
+`git reset HEAD <file>`
+
+>取消对文件的修改  
+`git checkout -- <file>`
+
+### 远程仓库的使用
