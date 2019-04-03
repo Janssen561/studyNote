@@ -167,3 +167,7 @@ git config --global alias.last 'log -1 HEAD'
 `git branch [--merged|--no-merged]` 查看已合并|未合并分支  
 `git branch -d hotfix` 删除 `hotfix` 分支
 
+### 远程分支
+
+`git checkout -b [branch] [remotename]/[branch]`  
+`git checkout --track origin/serverfix`
