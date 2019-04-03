@@ -162,8 +162,8 @@ git config --global alias.last 'log -1 HEAD'
 
 ### 分支管理
 
-`git branch`
-`git branch -v`
-`git branch [--merged|--no-merged]` 查看已合并|未合并分支
+`git branch`  
+`git branch -v`  
+`git branch [--merged|--no-merged]` 查看已合并|未合并分支  
 `git branch -d hotfix` 删除 `hotfix` 分支
 
