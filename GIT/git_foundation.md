@@ -151,5 +151,6 @@ git config --global alias.last 'log -1 HEAD'
 
 ### 分支新建与合并
 `git checkout -b iss53` 新建并切换到分支 `iss53` 
+`git checkout master` 切回 `master` 分支
 `git merge hotfix` 合并 `hotfix` 到 `master` 分支
 `git branch -d hotfix` 删除 `hotfix` 分支
