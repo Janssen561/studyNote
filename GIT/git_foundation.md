@@ -169,11 +169,30 @@ git config --global alias.last 'log -1 HEAD'
 ### 分支管理
 
 `git branch`  
-`git branch -v`  
+`git branch [-v|-vv]`  
 `git branch [--merged|--no-merged]` 查看已合并|未合并分支  
 `git branch -d hotfix` 删除 `hotfix` 分支
 
 ### 远程分支
 
-`git checkout -b [branch] [remotename]/[branch]`  
-`git checkout --track origin/serverfix`
+查看远程分支 `git ls-remote`  `git remote show origin`  
+新建远程分支 `git push branch origin/branch`  
+跟踪远程分支 `git checkout -b [branch] [remotename]/[branch]`  
+ `git checkout --track origin/serverfix`  
+拉取远程分支 `git fetch`  
+删除远程分支 `git push origin --delete newtest`
+
+### 变基
+
+```shell
+$ git checkout experiment
+$ git rebase master
+First, rewinding head to replay your work on top of it...
+Applying: added staged command
+$ git checkout master
+$ git merge experiment
+ ```
+
+`git rebase --onto master server client`  
+> “取出 client 分支，找出处于 client 分支和 server 分支的共同祖先之后
+的修改，然后把它们在 master 分支上重演一遍”
