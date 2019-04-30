@@ -1,4 +1,3 @@
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
 # 个人学习笔记
 
 ## GIT 基础
@@ -8,3 +7,5 @@
 
 # 数学公式测试
 $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$" title="$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$" /></a>
