@@ -176,7 +176,7 @@ git config --global alias.last 'log -1 HEAD'
 ### 远程分支
 
 查看远程分支 `git ls-remote`  `git remote show origin`  
-新建远程分支 `git push branch origin/branch`  
+新建远程分支 `git push remote branch`  
 跟踪远程分支 `git checkout -b [branch] [remotename]/[branch]`  
  `git checkout --track origin/serverfix`  
 拉取远程分支 `git fetch`  
